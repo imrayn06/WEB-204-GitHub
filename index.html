@@ -3,9 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reebokgit </title>
+    <title>Reebok</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: relative;
+    background-color: black;
+    padding: 10px 20px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.left-menu {
+    display: inline-block;
+}
+
+.dropdown {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.right-menu {
+    position: absolute;
+    right: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right-menu .logo,
+.right-menu .menu-item,
+.right-menu .stores-dropdown {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.right-menu .menu-item {
+    color: white;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+.aditya-birla-logo {
+    width: 48px;
+    height: auto;
+}
+
+.stores-dropdown {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.menu-divider {
+    height: 24px;
+    width: 1px;
+    background-color: white;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+    </style>
 </head>
 <body>
-    
+    <nav class="navbar">
+        <div class="left-menu">
+            <select class="dropdown">
+                <option>PETER ENGLAND</option>
+                <option>ALLEN SOLLY</option>
+                <option>REEBOK</option>
+                <option>FOREEVER 21</option>
+                <option>VAN HEUSEN</option>
+                <option>LOUIS PHILIPPE</option>
+            </select>
+        </div>
+        <div class="right-menu">
+            <div class="menu-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <select class="stores-dropdown">
+                    <option>Bangalore</option>
+                    <option>Ahmedabad</option>
+                    <option>Surat</option>
+                    <option>Chennai</option>
+                    <option>Kolkata</option>
+                    <option>Delhi</option>
+                </select>
+            </div>
+            
+            <div class="menu-divider"></div>
+            <div class="menu-item">
+                <i class="fa-regular fa-message"></i>
+            </div>
+            <div class="menu-item">
+                CONTACT US
+            </div>
+            <div class="menu-divider"></div>
+            <div class="menu-item">
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="menu-item">
+                LOG IN
+            </div>
+            <div class="menu-divider"></div>
+            <div class="menu-item">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="menu-divider"></div>
+            <div class="menu-item">
+                <i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i>
+            </div>
+            <div class="menu-divider"></div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyA5EBOnlmkKEONsgO-oKd1sHww4cO7W2yQbr8CqQxzg&s" alt="Aditya Birla Logo" class="logo aditya-birla-logo">
+            </div>
+        </div>
+    </nav>
 </body>
 </html>
