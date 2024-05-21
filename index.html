@@ -1,10 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reebok</title>
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
+        
+        .navbar {
+            position: relative;
+            background-color: black;
+            padding: 10px 20px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .left-menu {
+            display: inline-block;
+        }
+
+        .dropdown {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border: none;
+            font-size: 16px;
+        }
+
+        .right-menu {
+            position: absolute;
+            right: 1px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .right-menu .logo,
+        .right-menu .menu-item,
+        .right-menu .stores-dropdown {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .right-menu .menu-item {
+            color: white;
+            padding: 16px;
+            cursor: pointer;
+        }
+
+        .logo {
+            width: 24px;
+            height: 24px;
+            margin: 0 10px;
+        }
+
+        .aditya-birla-logo {
+            width: 48px;
+            height: auto;
+        }
+
+        .stores-dropdown {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border: none;
+            font-size: 16px;
+        }
+
+        .menu-divider {
+            height: 24px;
+            width: 1px;
+            background-color: white;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 10px;
+        }
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbarmid {
+            background-color: white;
+            display: flex; 
+            flex-flow: row; 
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            margin-left: 1%;
+            padding: 15px 100px;
+            margin-bottom: 1%;
+            overflow: hidden;
+            white-space: nowrap;
+
+
+        }
+
+        .navbarmid li {
+            float: left;
+            list-style: none;
+            /* padding: 10px; */
+            text-decoration: none;
+            padding-left: 40px;
+
+
+        }
+
+
+        .navbarmid li a {
+            text-decoration: none;
+            color: black;
+
+
+
+        }
+
+        .rbklogo {
+
+            float: left;
+            margin-top: 15px;
+            font-size-adjust: 10px;
+            width: 185px;
+            height: 21px;
+            padding-left: 19px;
+
+
+
+
+        }
+
+        .navbarmid li a.rednav {
+            color: red;
+        }
+
+
+        #search-box {
+            width: 300px;
+            height: 36px;
+            padding: 0 10px;
+            /* border: 1px solid #ccc; */
+            border-radius: 3px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .search {
+
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            margin-left: 100px;
+            border-bottom: 2px solid rgb(0, 0, 0);
+            width: 320px;
+
+        }
+
+        .material-symbols-outlined {
+
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        .rbk {
+            margin-top: 1px;
+            margin-left: 2px;
+
+        }
+
+        .box {
+            border-radius: 50px;
+            color: white;
+            background-color: rgb(194, 24, 24);
+            width: 300px;
+            height: 50px;
+            border: none;
+            margin-left: 1%;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -71,10 +251,112 @@
             width: 390px;
 
         }
-
     </style>
 </head>
+
 <body>
+
+    <header>
+        <section>
+            <nav class="navbar">
+                <div class="left-menu">
+                    <select class="dropdown">
+                        <option>PETER ENGLAND</option>
+                        <option>ALLEN SOLLY</option>
+                        <option>REEBOK</option>
+                        <option>FOREEVER 21</option>
+                        <option>VAN HEUSEN</option>
+                        <option>LOUIS PHILIPPE</option>
+                    </select>
+                </div>
+                <div class="right-menu">
+                    <div class="menu-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <select class="stores-dropdown">
+                            <option>Bangalore</option>
+                            <option>Ahmedabad</option>
+                            <option>Surat</option>
+                            <option>Chennai</option>
+                            <option>Kolkata</option>
+                            <option>Delhi</option>
+                        </select>
+                    </div>
+
+                    <div class="menu-divider"></div>
+                    <div class="menu-item">
+                        <i class="fa-regular fa-message"></i>
+                    </div>
+                    <div class="menu-item">
+                        CONTACT US
+                    </div>
+                    <div class="menu-divider"></div>
+                    <div class="menu-item">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="menu-item">
+                        LOG IN
+                    </div>
+                    <div class="menu-divider"></div>
+                    <div class="menu-item">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="menu-divider"></div>
+                    <div class="menu-item">
+                        <i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="menu-divider"></div>
+                    <div class="menu-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyA5EBOnlmkKEONsgO-oKd1sHww4cO7W2yQbr8CqQxzg&s"
+                            alt="Aditya Birla Logo" class="logo aditya-birla-logo">
+                    </div>
+                </div>
+            </nav>
+
+        </section>
+        <section>
+            <nav class="navbarmid">
+                <a href="reeboknav.html" class="rbk"><img
+                        src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/header_brand_logo_RBK.png?q=75&auto=format"
+                        alt="logo" target="#" class="rbklogo"></a>
+                <ul style="font-weight: bold;">
+                    <li><a href="#">NEW</a></li>
+                    <li><a href="#">ICONS</a></li>
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">SPORTS</a></li>
+                    <li><a href="#">CLASSIC</a></li>
+                    <li><a href="#" class="rednav">SALE</a></li>
+                </ul>
+
+
+                <div class="search">
+                    <span class="material-symbols-outlined">
+                        search</span>
+
+                    <span>
+                        <input type="text"
+                            style="border:none; text-align:center; font-size: medium; padding-bottom: 10px;"
+                            placeholder="Search Shoes">
+                    </span>
+                </div>
+                <button class="box">
+
+                    <img src="https://img.icons8.com/carbon-copy/100/FFFFFF/in-transit.png"
+                        style="width: 60px; height: 50px; float: left;" alt="">
+                    <p style="font-weight: bolder; margin-top: 2%; margin-bottom: 0%; text-align: left;">EXPRESS
+                        DELIVERY
+                    </p>
+                    <p style=" margin-top:1%; margin-bottom: 0%; text-align: left; color: rgb(216, 216, 215);">Select
+                        your
+                        nearest store > </p>
+                </button>
+
+            </nav>
+
+
+        </section>
+
+    </header>
     <div class="main">
         <section>
             <div class="card">
@@ -145,7 +427,78 @@
                 </a>
 
             </div>
+            <div class="card">
+                <a href="#">
+                    <img src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/wishlist_icon_black.svg" alt=""
+                        class="heart">
+                    <div class="ribbon"><span>I AM THE NEW</span></div>
+                    <img class="shoeimage"
+                        src="https://imagescdn.reebok.in/img/app/product/3/39622095-12725815.jpg?q=75&auto=format&w=387"
+                        alt="">
+                    <p>
+                        Walking Shoes <img
+                            src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/v-hicon-similar.svg"
+                            style="float: right;" alt="">
+                    </p>
+
+
+                    <p>Reebok Men Essential Walking Shoes</p>
+                    <h3>₹ 5,999</h3>
+                </a>
+
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/wishlist_icon_black.svg" alt=""
+                        class="heart">
+                    <div class="ribbon"><span>I AM THE NEW</span></div>
+                    <img class="shoeimage"
+                        src="https://imagescdn.reebok.in/img/app/product/3/39621981-12721832.jpg?q=75&auto=format&w=387"
+                        alt="">
+                    <p>Running Shoes <img
+                            src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/v-hicon-similar.svg"
+                            style="float: right;" alt=""></p>
+                    <p>Reebok Men Quick Walking Shoess</p>
+                    <h3>₹ 3,299</h3>
+                </a>
+
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/wishlist_icon_black.svg" alt=""
+                        class="heart">
+                    <div class="ribbon"><span>I AM THE NEW</span></div>
+                    <img class="shoeimage"
+                        src="https://imagescdn.reebok.in/img/app/product/9/905001-11144350.jpg?q=75&auto=format&w=387"
+                        alt="">
+                    <p>Training Shoes <img
+                            src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/v-hicon-similar.svg"
+                            style="float: right;" alt=""></p>
+                    <p>Reebok Mens NANO X2 TR ADVENTURE</p>
+                    <h3>₹ 9,500</h3>
+                </a>
+
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/wishlist_icon_black.svg" alt=""
+                        class="heart">
+                    <div class="ribbon"><span>I AM THE NEW</span></div>
+                    <img class="shoeimage"
+                        src="https://imagescdn.reebok.in/img/app/product/9/920195-11533117.jpg?q=75&auto=format&w=387"
+                        alt="">
+                    <p>Running Shoes <img
+                            src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/v-hicon-similar.svg"
+                            style="float: right;" alt=""></p>
+                    <p>Reebok Men Amaze Walker Walking Shoes</p>
+                    <h3>₹ 1,999</h3>
+                </a>
+
+            </div>
         </section>
+
+
     </div>
 </body>
+
 </html>
